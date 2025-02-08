@@ -3,8 +3,8 @@ from typing import TYPE_CHECKING
 from .cog import Boss
 
 if TYPE_CHECKING:
-    from ballsdex.core.bot import BallsDexBot
+    from carfigures.core.bot import CarFiguresBot
 
 
-async def setup(bot: "BallsDexBot"):
+async def setup(bot: "CarFiguresBot"):
     await bot.add_cog(Boss(bot))
